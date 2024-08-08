@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Pay Donation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Donate to the Poor People...</h1>
+        <h4>via Google Pay</h4>
+        <form id="donation-form">
+            <label for="amount">Enter Amount:</label>
+            <input type="text" id="amount" name="amount" required>
+            <button type="submit" style="position: relative; left: 12px;">Generate QR Code</button>
+        </form>
+        <div id="qr-code" style="display: none;">
+            <img src="QR.jpg" alt="Google Pay QR Code" id="qr-code-img">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
